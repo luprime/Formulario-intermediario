@@ -17,113 +17,113 @@
 <body>
     <div class="page">
         <header>
-            <h1>Crie e compartilhe seu evento.</h1>
-            <p>O primeiro passo, é preencher esse
-                formulário de inscrição.</p>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
         </header>
         <form id="my-form">
             
             <fieldset>
+                <legend>Informações pessoais</legend>
                 <div class="fieldset-wrapper">
-                    <legend>Informações do Evento</legend>
 
-                    <div class="input-wrapper">
-                    <label for="event-tittle">Título do evento* <span>(mínimo 8 caracteres)</span></label>
-                    <input 
-                        type="text" 
-                        id="event-tittle"
-                        required 
-                        minlength="8"/>
-                    </div>
-
-                    <div class="input-wrapper">
-                    <label for="event-url">Link do evento <span>(comece com https://)</span></label>
-                    <input type="url" id="event-url" />
-                    </div>
-
-                    <div class="input-wrapper">
-                    <label for="event-whastapp">Whatsapp para contato <span>(somente números)</span></label>
-                    <input type="number" id="event-whastapp" />
-                    </div>
-
-                    <div class="input-wrapper">
-                    <label for="event-info">Informações extras</label>
-                    <textarea id="event-info"></textarea>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="event-category">Categoria</label>
-                        <select id="event-category">
-                            <option value="live">Ao vivo</option>
-                            <option value="podcast">Podcast</option>
-                            <option value="mentorship">Mentoria</option>
-                        </select>
+                    <div class="col-2">
+                        <div class="fieldset-wrapper">
+                            <label for="mentorship-name">nome</label>
+                            <input 
+                                type="text" 
+                                id="mentorship-name"
+                                required/>
                         </div>
+
+                        <div class="fieldset-wrapper">
+                        <label for="mentorship-lastname">Sobrenome</label>
+                        <input type="text" 
+                        id="mentorship-lastname"
+                        required />
+                        </div>
+                    </div>
+
+                    <div class="fieldset-wrapper">
+                        <label for="mentorship-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" 
+                        id="mentorship-password"
+                        minlength="6"
+                        required />
+                    </div>
                 </div>
-                
             </fieldset>
 
             <fieldset>
-                <div class="fieldset-wrapper">
-                  <legend>Privacidade</legend>
-        
-                  <div class="input-wrapper">
-                    <label for="event-email">E-mail do administrador <span>(digite um email válido)</span></label>
-                    <input type="email" id="event-email" />
-                  </div>
-        
-                  <div class="input-wrapper">
-                    <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
-                    <input 
-                        type="password" 
-                        id="event-password" 
-                        required
-                        minlength="8" />
-                  </div>
-
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" id="event-private" />
-                    <label for="event-private">Evento privado</label>
-                  </div>
-        
+                <legend>Informações do mentor</legend>
+                <div class="fieldset-wrapper">              
+                  <label for="mentorship-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                    <input type="text" 
+                    id="mentorship-mentor"
+                    required />
                 </div>
-              </fieldset>
-
-              <fieldset>
-                <div class="fieldset-wrapper">
-                  <legend>Dia e hora</legend>
-        
-                  <div class="col-3">
-                    <div class="input-wrapper">
-                      <label for="event-date">Data</label>
-                      <input type="date" id="event-date" />
-                    </div>
-          
-                    <div class="input-wrapper">
-                      <label for="event-begin">Das</label>
-                      <input type="time" id="event-begin" />
-                    </div>
-        
-                    <div class="input-wrapper">
-                      <label for="event-end">Até</label>
-                      <input type="time" id="event-end" />
-                    </div>
-                  </div>
-        
+            </fieldset>
                   
-        
+            <fieldset>
+                <legend>Seus horários disponíveis</legend>
+                  
+                <legend class="h1">
+                    primeira monitoria
+                </legend>
+
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="mentorship-date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input class="first-input" type="text"
+                        id="mentorship-date"
+                        required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentorship-time">Das</label>
+                        <input type="text"
+                        id="mentorship-time"
+                        required/>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="mentorship-time">Até</label>
+                        <input type="text"
+                        id="mentorship-time"
+                        required/>
+                    </div>
                 </div>
-              </fieldset>
 
-              
-
+                <legend class="h1">
+                    segunda monitoria
+                </legend>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                      <label for="mentorship-date">Data<span>(DD/MM/AAAA)</span></label>
+                        <input class="first-input" type="text"
+                        id="mentorship-date"
+                        required/>
+                    </div>
+                    <div class="input-wrapper">
+                      <label for="mentorship-time">Das</label>
+                      <input type="text"
+                      id="mentorship-time"
+                      required/>
+                    </div>
+                    <div class="input-wrapper">
+                      <label for="mentorship-time">Até</label>
+                      <input type="text"
+                      id="mentorship-time"
+                      required/>
+                    </div>
+                  </div>
+              </fieldset>              
         </form>
+
+
         <footer>
             <input 
                 form="my-form" 
                 class="button" 
                 type="submit" 
-                value="Salvar evento">
+                value="Salvar">
         </footer>
     </div>
     
