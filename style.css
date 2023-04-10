@@ -146,3 +146,60 @@
     margin-bottom: 8px;
   }
 
+.col-3{
+    display: flex;
+    gap: 22px;
+}
+
+.first-input{
+    width: 300px !important;
+}
+
+.col-3 input{
+    align-items: center;
+    width: 140px;
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    margin-top: 8px;
+}
+
+footer{
+    background: #535971;
+
+    height: 160px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+
+    margin-bottom: 100px;
+
+    border-radius: 0 0 20px 20px;
+
+    border: none;
+}
+
+footer .button {
+    height: 56px;
+    background: #ff5374;
+    border: 2px;
+    border-radius: 20px;
+
+    margin-top: 52px;
+
+    font-family: 'Staatliches';
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #ffffff;
+}
+
+footer .button:hover{
+    background: #e94263;
+}
